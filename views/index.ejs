@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+    <title>Mongoose</title>
+</head>
+
+<script>
+    $(document).ready(function(){
+        
+       
+})
+</script>
+<body>
+    <h1>Welcome to Quoting Dojo</h1>
+
+<% if(messages.registration) { %>
+     <% for (var x of messages.registration) { %>
+      <h3><%= x %></h3>
+     <% } %>
+<%}%>
+    <form action="/users" method="post" id="form">
+        Your name: <input type="text" name="name"><br><br>
+         <!-- <input type="text" name="quote" style="height: 50px"><br><br> -->
+         Your quote: <br> <textarea name="quote" id="" cols="30" rows="3" ></textarea><br>
+        <button>Add a quote</button>
+    </form>
+    <br>
+   <a href="/quote"><button>Skip to quotes </button></a>
+    
+</body>
+</html>
